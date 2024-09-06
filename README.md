@@ -11,23 +11,26 @@ Java 17
 Maven 3.6+
 Postman (optional, for API testing)
 Getting Started
+
 1. Clone the Repository
    bash
    Copy code
    git clone https://github.com/tmull1/User-Management-App.git
    cd User-Management-App
-2. Build the Application
-   Before running the application, make sure you have Maven installed. You can build the application with the following command:
 
+   2. Build the Application
+   Before running the application, make sure you have Maven installed. You can build the application with the following command:
 bash
 Copy code
 mvn clean install
+
 3. Run the Application
    Once the build is successful, you can run the Spring Boot application using the following command:
 
 bash
 Copy code
 mvn spring-boot:run
+
 4. Accessing the Application
    The application will be running at http://localhost:8080. You can interact with the API using Postman or any other API testing tool.
 
@@ -38,6 +41,7 @@ URL: http://localhost:8080/h2-console
 JDBC URL: jdbc:h2:mem:testdb
 Username: sa
 Password: Leave blank
+
 6. API Endpoints
    Here are the available API endpoints you can test:
 
@@ -60,11 +64,13 @@ Get User Profile (Authenticated User)
 Method: GET
 URL: /api/users/profile
 Authorization: Basic Auth (user credentials)
+
 7. Testing Authentication
    You can test the authentication using Postman by adding Basic Auth in the Authorization tab. Use the following credentials for the default admin:
 
 Username: admin
 Password: Password1
+
 8. Important Configuration
    Here are the key configurations from the application.properties file:
 
@@ -82,6 +88,7 @@ spring.jpa.show-sql=true
 
 # Application name
 spring.application.name=User-Management-App
+
 9. Custom Validation
    This application includes a custom password validation that ensures passwords contain at least one uppercase letter, one lowercase letter, and one digit. You can modify the password validation logic in the PasswordValidator class.
 
