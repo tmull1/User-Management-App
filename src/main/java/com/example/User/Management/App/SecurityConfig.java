@@ -34,6 +34,7 @@ public class SecurityConfig {
                         .anyRequest().authenticated()  // All other requests require authentication
                 )
                 .formLogin(form -> form
+                        .defaultSuccessUrl("/api/users/all", true)  // Redirect to /api/users/all after successful login
                         .permitAll()  // Allow anyone to access the login page
                 )
                 .logout(logout -> logout
@@ -44,6 +45,8 @@ public class SecurityConfig {
         return http.build();
     }
 }
+
+
 
 
 
