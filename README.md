@@ -1,6 +1,3 @@
-
-Sure! Below is a sample README.md file that details how to set up and run your Spring Boot User Management Application, including database setup (H2 in-memory database):
-
 User Management Application
 This is a Spring Boot-based User Management System that provides user registration, authentication, and role-based access control (Admin/User). The application uses an in-memory H2 database and Spring Security for authentication and authorization.
 
@@ -17,7 +14,7 @@ Getting Started
 1. Clone the Repository
    bash
    Copy code
-   git clone https://github.com/yourusername/User-Management-App.git
+   git clone https://github.com/tmull1/User-Management-App.git
    cd User-Management-App
 2. Build the Application
    Before running the application, make sure you have Maven installed. You can build the application with the following command:
